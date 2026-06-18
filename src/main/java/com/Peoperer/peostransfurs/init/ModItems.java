@@ -1,6 +1,9 @@
 package com.Peoperer.peostransfurs.init;
 
 import com.Peoperer.peostransfurs.Peostransfurs;
+import net.ltxprogrammer.changed.init.ChangedBlocks;
+import net.ltxprogrammer.changed.init.ChangedLatexTypes;
+import net.ltxprogrammer.changed.item.AbstractLatexItem;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SpawnEggItem;
@@ -48,6 +51,9 @@ public class ModItems {
             () -> new ForgeSpawnEggItem(ModEntities.WINGED_FORSETTI, 0xEFE6D5, 0xC9BBA0,
                     new Item.Properties()));
 
+
+    public static final RegistryObject<AbstractLatexItem> RED_LATEX_GOO = ITEMS.register("red_latex_goo",
+            () -> new AbstractLatexItem(ChangedBlocks.DARK_LATEX_WALL_SPLOTCH.get(), ModLatexTypes.RED_LATEX));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

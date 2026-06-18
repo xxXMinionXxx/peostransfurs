@@ -1,7 +1,10 @@
 package com.Peoperer.peostransfurs.entity;
 
+import com.Peoperer.peostransfurs.changed.RedSpreadingLatexType;
+import com.Peoperer.peostransfurs.init.ModLatexTypes;
 import net.ltxprogrammer.changed.ability.IAbstractChangedEntity;
 import net.ltxprogrammer.changed.entity.*;
+import net.ltxprogrammer.changed.entity.latex.LatexType;
 import net.ltxprogrammer.changed.entity.robot.Exoskeleton;
 import net.ltxprogrammer.changed.init.ChangedAttributes;
 import net.ltxprogrammer.changed.util.Color3;
@@ -67,6 +70,11 @@ public class Red_Latex_Drone_Wolf extends ChangedEntity {
                 instance.refreshAttributes();
             }
         }
+    }
+
+    @Override
+    public LatexType getLatexType() {
+        return ModLatexTypes.RED_LATEX.get();
     }
 
     @Override
