@@ -18,7 +18,7 @@ import java.util.function.Supplier;
 
 public class RedLatexBlock extends AbstractLatexBlock {
     public RedLatexBlock(Properties properties) {
-        super(properties, RedSpreadingLatexType::new, ModItems.RED_LATEX_GOO);
+        super(properties, ModLatexTypes.RED_LATEX, ModItems.RED_LATEX_GOO);
     }
 
     @Override
